@@ -1,0 +1,88 @@
+/* Add this animation definition */
+@keyframes birthdayAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#birthdayText {
+    display: inline-block;
+    font-size: 2.5rem;
+    animation: birthdayAnimation 3s ease forwards;
+}
+/* Add a class for hiding the birthday message initially */
+.hidden {
+    display: none;
+}
+/* Style the birthday message */
+#message {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease forwards; /* Add an animation for fadeIn */
+}
+/* Update the background-color property in .input */
+.input {
+    border: none;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 60%;
+    margin-top: 20px;
+    display: block;
+    border-color: transparent;
+    box-shadow: rgba(204, 189, 52, 0.381);
+    background-color: rgba(207, 222, 224, 0.776); /* Corrected background-color */
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Add animation property to .overlay */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 221, 240, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    animation: fadeIn 2s ease forwards; /* Apply the fade-in animation */
+}
+
+*{
+    padding:0;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://banner2.cleanpng.com/20180715/eub/kisspng-emoticon-smiley-kiss-emoji-emoticon-love-facebook-5b4b51a8d124f3.7373419015316627608567.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: rgb(12, 67, 101);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.col {
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+}
